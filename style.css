@@ -7,13 +7,16 @@
   /* Color */
   --bg: #0d0d0d;
   --bg-alt: #131311;
-  --bg-card: #121110;
+  --bg-card: var(--white);
   --gold: #c9a464;
+  --gold-deep: #8a5a1a;
   --gold-soft: rgba(201, 164, 100, 0.35);
   --gold-faint: rgba(201, 164, 100, 0.12);
   --white: #f6f3ec;
   --muted: #b9b3a6;
   --muted-dim: #8a8478;
+  --brown-dark: #3a2e22;
+  --brown-muted: #6b5847;
   --whatsapp: #25d366;
 
   /* Type */
@@ -281,7 +284,7 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
 
 .card {
   background: var(--bg-card);
-  border: 1px solid var(--gold-soft);
+  border: 1px solid var(--gold);
   border-radius: 4px;
   padding: var(--space-3);
   display: flex;
@@ -300,25 +303,25 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
   font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--gold-deep);
 }
 
 .card-title {
   font-family: var(--font-serif);
   font-weight: 600;
   font-size: 1.3rem;
-  color: var(--white);
+  color: var(--brown-dark);
 }
 
 .card-desc {
-  color: var(--muted);
+  color: var(--brown-muted);
   font-size: 0.9rem;
   line-height: 1.55;
   flex-grow: 1;
 }
 
 .card-price {
-  border: 1px solid var(--gold-soft);
+  border: 1px solid var(--gold);
   border-radius: 3px;
   padding: 0.7rem 0.9rem;
   display: flex;
@@ -328,7 +331,7 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
 
 .card-price .price-prefix {
   font-size: 0.72rem;
-  color: var(--muted-dim);
+  color: var(--brown-muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -337,12 +340,12 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: 1.3rem;
-  color: var(--gold);
+  color: var(--gold-deep);
 }
 
 .card-price .price-currency {
   font-size: 0.72rem;
-  color: var(--muted-dim);
+  color: var(--brown-muted);
   letter-spacing: 0.05em;
 }
 
@@ -358,10 +361,10 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
   align-items: center;
   gap: 0.55rem;
   font-size: 0.85rem;
-  color: var(--muted);
+  color: var(--brown-muted);
 }
 
-.card-features svg { width: 16px; height: 16px; }
+.card-features svg { width: 16px; height: 16px; color: var(--gold-deep); }
 
 /* ---------- Contacto ---------- */
 
@@ -374,7 +377,7 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
 }
 
 .contacto-card {
-  border: 1px solid var(--gold-soft);
+  border: 1px solid var(--gold);
   border-radius: 4px;
   background: var(--bg-card);
   max-width: 460px;
@@ -391,11 +394,13 @@ section { padding: var(--space-6) var(--space-2); max-width: 1120px; margin: 0 a
   align-items: center;
   gap: 0.75rem;
   font-size: 0.95rem;
-  color: var(--white);
+  color: var(--brown-dark);
 }
 
+.contacto-row svg { width: 22px; height: 22px; color: var(--gold-deep); }
+
 .contacto-row a { text-decoration: none; }
-.contacto-row a:hover { color: var(--gold); }
+.contacto-row a:hover { color: var(--gold-deep); }
 
 /* ---------- Footer ---------- */
 
